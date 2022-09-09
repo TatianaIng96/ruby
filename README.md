@@ -43,6 +43,4 @@ puts ("mi nombre es " + character_name + " tengo " + character_age + " años"
 | Booleano       | ismale= true  |
 | nulo           | flaw= nil     |
 
-### nota : las cadenas de texto son las m
-
- 
+### nota : las cadenas de texto son las mas utilizadas en Ruby
