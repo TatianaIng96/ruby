@@ -5,7 +5,7 @@
  3. Despues vamos a verificar si la instalacion ha sido correcta `ruby --version`
  4. Abre tu editor de codigo preferido
  
- #Ruby
+ # Ruby
  
  ## Imprimir "Hello world"
   Para imprimir en ruby se utiliza dos comandos `print` ó `puts` este último se diferencia en que al imprimir lo hace en lineas dfeentes ej:
