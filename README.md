@@ -51,14 +51,57 @@ Nota : las cadenas de texto son las mas utilizadas en Ruby
  
 ```ruby
 puts "" # Todo lo que esté dentro de las "" se consider cadena
-puts " hello"\ academy"  # hello" # el \ indica que se quiere tomar las comillas literalmente dentro de la cadena
+puts " hello"\ academy"  # hello" 
 
-#Contener una frase dentro d euna variable y mostrarla
 phrase = "Hello world"
-puts phrase # Hello world
+puts phrase.upcase() #HELLO WORLD
+puts phrase.downcase() #hello world
+
+phrase = "   Hello world    "
+puts phrase#   Hello world    
+puts phrase.strip() #Hello world    elimina los espacios
+
+frase= "Hello World"
+puts frase.length() # 11
+puts frase.include? "World" # true
+puts frase[0] # H
+puts frase[0,3] # Hel
+puts frase.index("W") # 6 #po
+
+``` 
+
+Asi como los anteriores métodos existen muchos para las cadenas de texto
+
+## Math & NUmbers
+
+A continuacíon veremos algunos métodos que se pueden utilizar para los tipos de datos Number
+
+```ruby
+puts 5 + 4 # 9
+puts 5 * 4 # 20
+puts 2**3 # 2³ = 8
+puts 10% 3 # 1
+#De la misma forma se pueden utilizar todas las operacones matematicas
+
+```
+Por otro lado también se puede almacenar datos en una variable :
 
 
+```ruby
+num =20
+puts num # 20
+puts ("my fav num is: " + num) # my fav num is 20
+puts ("my fav num is: " + num.to_s) #to_s convierte el numero en cadena
+
+num = -40
+puts num.abs() # 40
 
 
+num = 20.487
+puts num.round() # 20
+num = 20.687
+puts num.round() # 21
+puts num.floor() #20
+```
 
 
