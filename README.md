@@ -104,4 +104,31 @@ puts num.round() # 21
 puts num.floor() #20
 ```
 
+Por otro lado tambien se tiene los metodos matematicos, este esta dado por una clase especial 
+que se usa en la mayoria de los lenguages de programación Math.
+
+
+```ruby
+num=36
+puts Math.sqrt(num) # 6.0
+puts Math.log(1) #
+```
+
+## Getting User Input (Obtener la Entrada de Usuario)
+
+Tambien en ruby se pueden obtener iinformación de los usuarios, basicamente permite que un usuario ingrese informacion 
+ 
+ Ejemplo:
+ 
+ ```ruby
+puts "Ingresa tu nombre: "
+name = gets.chomp()
+puts ("hello "+name)
+
+#Ingresa tu nombre // Tatiana
+# hello Tatiana
+```
+
+
+
 
