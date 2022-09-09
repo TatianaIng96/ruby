@@ -43,4 +43,20 @@ puts ("mi nombre es " + character_name + " tengo " + character_age + " años"
 | Booleano       | ismale= true  |
 | nulo           | flaw= nil     |
 
-### nota : las cadenas de texto son las mas utilizadas en Ruby
+Nota : las cadenas de texto son las mas utilizadas en Ruby
+
+## Métodos e se suelen utilizar con cadenas
+
+```ruby
+puts "" # odo lo que esté dentro de las "" se consider cadena
+puts " hello"\ academy"  # hello" # el \ indica que se quiere tomar las comillas literalmente dentro de la cadena
+
+#Contener una frase dentro d euna variable y mostrarla
+phrase = "Hello world"
+puts phrase # Hello world
+
+
+
+
+
+
