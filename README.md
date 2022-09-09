@@ -21,9 +21,9 @@
   ## hello world is cool
   ```
  
-# Variable
+## Variables
 
-las variables se utilizan como contenedor de datos ej:
+Las variables se utilizan como contenedor de datos ej:
  ```ruby
 character_name = "jhon"
 character_age = "35"
@@ -32,3 +32,15 @@ puts ("mi nombre es " + character_name + " tengo " + character_age + " años"
 
 ## mi nombre es jhon tengo 35 años
  ```
+ ## Tipos de datos
+ 
+ Aqui vamos a ver los diferentes tipos de datos que s epueden utilizar en un progrma de ruby
+ 
+| Tipo de datos  | Ejemplo       |
+| -------------  | ------------- |
+| Cadena de texto| name= "jhon"  |
+| Numeros        | age = 75      |
+| Booleano       | ismale= true  |
+| nulo           | flaw= nil     |
+
+ 
