@@ -128,7 +128,61 @@ puts ("hello "+name)
 #Ingresa tu nombre // Tatiana
 # hello Tatiana
 ```
-Nota: todo lo que toma el método gets.chomp()  es una cadena
+Nota: todo lo que toma el método `gets.chomp()` es una cadena
+
+##Otros métodos
+
+Agregar el método `to_f` convierte una cadena en un numero flotante ej  
+```ruby
+num1= 3 
+num1.to_f # 3.0
+```
+
+## Arrays
+
+Los arrys en ruby no se diferencian de otros lenguajes se definen asi:
+
+```ruby
+#friends = Array.new
+# friends= ["kevi","karen","oscar"]  o tambien:
+
+friends=Array["kevi","karen","oscar"]  
+puts friends
+# Kevin // friends[0]
+#karen
+#oscar
+```
+Nota : Un array puede contener todos los tipos de datos
+
+## Hashes
+
+ Un hash es un tipo se escritura de datos donde podemos almacenar un montón de piezas diferentes de información,
+ el cual se define por una palabra clave, y un valor
+ 
+ ```ruby
+ states ={
+ "Armenia" => "AR"
+ :Bogota" => "BG"
+  1 => "CL"
+ }
+ 
+ puts states["Armenia"] # AR,
+ puts states[bogota] # BG,
+ puts states[1] # CL
+ 
+ ```
+ ## Definiendoun Metodo en Ruby
+ 
+ 
+```ruby
+def sayhi
+    puts "hello user"
+end
+
+sayhi # hello user
+
+
+```
 
 
 
