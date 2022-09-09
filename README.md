@@ -128,7 +128,7 @@ puts ("hello "+name)
 #Ingresa tu nombre // Tatiana
 # hello Tatiana
 ```
-
+Nota: todo lo que toma el método gets.chomp()  es una cadena
 
 
 
