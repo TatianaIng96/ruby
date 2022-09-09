@@ -47,8 +47,10 @@ Nota : las cadenas de texto son las mas utilizadas en Ruby
 
 ## Métodos e se suelen utilizar con cadenas
 
+ A continuación algunos metodos de cadena de texto:
+ 
 ```ruby
-puts "" # odo lo que esté dentro de las "" se consider cadena
+puts "" # Todo lo que esté dentro de las "" se consider cadena
 puts " hello"\ academy"  # hello" # el \ indica que se quiere tomar las comillas literalmente dentro de la cadena
 
 #Contener una frase dentro d euna variable y mostrarla
