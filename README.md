@@ -171,7 +171,7 @@ Nota : Un array puede contener todos los tipos de datos
  puts states[1] # CL
  
  ```
- ## Definiendoun Metodo en Ruby
+ ## Definiendo un Metodo en Ruby
  
  
 ```ruby
@@ -180,9 +180,55 @@ def sayhi
 end
 
 sayhi # hello user
+```
+Nota: es Ruby como en la mayoria de lenguajes de programación los métodos son funciones los cuales pueden recibir parametrós y retornar variables
 
+
+
+```ruby
+def cube(num)
+ return num*num*num, 70
+end
+
+puts cube(3) 
+puts cube(3)[1] #70
+#27
+#70
+``` 
+## Declaraciones de ciclos
+
+Ruby tambien cuenta con condicionales `if` y bucles
+
+```ruby
+if  ismale and istall
+    puts "You are male"
+elsif ismale and !istall
+    puts "You are  short male"
+else
+    pust "You are not male"
+end
+
+
+# You are  short male
 
 ```
+
+Otro ejemplo utilizando condicionales en ruby es:
+
+```ruby
+def max(num1,num2,num3)
+    if num1>= num2 and num1>=num3
+        return num1
+    elsif num2>= num2 and num2>=num3
+        return num2
+    else
+        return num3
+    end
+end
+
+puts max(2,4,6)
+#6
+``
 
 
 
