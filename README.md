@@ -199,6 +199,8 @@ puts cube(3)[1] #70
 
 Ruby tambien cuenta con condicionales `if` y bucles
 
+## Expresión `if`
+`
 ```ruby
 if  ismale and istall
     puts "You are male"
@@ -213,7 +215,7 @@ end
 
 ```
 
-Otro ejemplo utilizando condicionales en ruby es:
+Otro ejemplo utilizando condicionales  ìf` en ruby es:
 
 ```ruby
 def max(num1,num2,num3)
@@ -228,6 +230,55 @@ end
 
 puts max(2,4,6)
 #6
+```
+
+## Expresion `case`
+
+``ruby
+def get_day_name(day)
+    day_name=""
+    
+    case day
+    when "mom"
+        day_name ="Momday"
+    when "tue"
+        day_name ="Tuesday"
+    when "wed"
+        day_name ="Wednsay"
+    when "thu"
+        day_name ="Thursday"
+    when "fri"
+        day_name ="Friday"
+    when "sat"
+        day_name ="Saturday"
+    when "sun"
+        day_name ="Sunday"
+
+    else
+        day_name= "invalid"
+    end
+
+    return day_name
+end
+
+puts get_day_name("fri") # Friday
+
+```
+## Bucle `while`
+
+```ruby
+index = 1
+
+while index <= 5
+    puts index
+    index+=1
+end
+
+#1
+#2
+#3
+#4
+#5
 ``
 
 
