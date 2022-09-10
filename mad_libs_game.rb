@@ -14,10 +14,23 @@ puts (plural_noun + " are blue")
 puts (" I love " + celebrity)
 
 
-def sayhi
-    puts "hello user"
+
+# Definicion d eun método 
+
+def sayhi(name)
+    puts ("hello user" + name)
+
 end
 
 
-sayhi
+sayhi("mike")
     
+## retornar un numero
+
+
+def cube(num)
+ return num*num*num
+
+end
+
+puts cube(3) 
