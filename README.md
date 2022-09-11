@@ -200,8 +200,9 @@ puts cube(3)[1] #70
 Ruby tambien cuenta con condicionales `if` y bucles
 
 ## Expresión `if`
-`
+
 ```ruby
+
 if  ismale and istall
     puts "You are male"
 elsif ismale and !istall
@@ -234,8 +235,9 @@ puts max(2,4,6)
 
 ## Expresion `case`
 
-``ruby
+```ruby
 def get_day_name(day)
+
     day_name=""
     
     case day
@@ -279,7 +281,7 @@ end
 #3
 #4
 #5
-``
+```
 
 
 
