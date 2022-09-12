@@ -284,4 +284,77 @@ end
 ```
 
 
+## Bucle `for`
 
+
+```ruby
+fiends=["Kevin","Karen","Oscar","Angela","Andy"]
+
+for element in  friends
+    puts element
+end
+
+#Kevin
+#Karen
+#Oscar
+#Angela
+#Andy
+```
+La siguiente funcion hace exactamente la iteración por cada elemento como en el ciclo `for` anterior
+
+```ruby
+friends.each do |friend|
+    puts friend
+end
+
+#Kevin
+#Karen
+#Oscar
+#Angela
+#Andy
+```
+
+Otra forma sería
+
+
+```ruby
+for index in 0..5
+    puts index
+end
+#0
+#1
+#2
+#3
+#4
+#5
+```
+o También
+
+
+```ruby
+6.times do |index|
+    puts index
+end
+
+=begin
+0
+1
+2
+3
+4
+5
+=end
+```
+
+# Lectura de archivos externos en Ruby
+
+Supongamos que se tiene un arhivo.txt guardado en su computadora
+
+
+```txt
+Jim, Sales
+Andy, Sales
+Kelly, Customer Service
+Creed, Quality Assurance
+Michael, Manager
+```
