@@ -387,3 +387,122 @@ end
 Puedes leer los diferentes modos de abrir un archivo 
 
  Visit: https://stackoverflow.com/questions/3682359/what-are-the-ruby-file-open-modes-and-options
+ 
+ #Manejo de errores
+ 
+ EL manejo errores en Ruby se utiliza de la siguiente manera
+ 
+ ```ruby
+ begin
+    num=10/0 
+rescue ZeroDivisionError
+     puts "Division by zero error"
+end
+ 
+# Division by zero error
+
+```
+# Class & object
+
+Las clases son lo mas parecido a un tipo de dato, como string, number, pero a diferencia de  estos, las clases son tipos de datos personlizados.
+Como por ejemplo la clase libros, seria un tipo de datos libros, donde se pueden definir algunos objetos de libros
+
+```ruby
+class Book
+    attr_accesor :title, :author,:pages,
+end
+
+```
+ Todo lo que está dentro de la clase, se llama atributos, los atributos solo es informacion que todos los libros van a tener.
+ 
+ Despues de definir la clase podemos crear un nuevo libro (objeto de libro) y acceder a los atributos a través de este.
+ 
+ ```ruby
+ class Book
+    attr_accesor :title, :author,:pages,
+end
+
+book1=Book.new()
+
+book1.title= "Harry Potter"
+book1.author ="JK Rowling"
+book1.pages= 400
+
+puts book1.title # Harry Potter
+ ```
+ Y de esta misma manera se pueden crear diferentes libros los cuales pueden tener los mismos atributos que book1
+ 
+ ## Método de Inicialización en las clases de Ruby
+ 
+ En el ejemplo anterior podemos observar que para crear un nuevo objeto y darle atributos se deben escrbir 3 lineas de codigo y así sucesivamente
+ para crear los demás libros. Para ahorrar código, existe el método de inicializacion de las clases, las cuales permiten ahorrar codigo, pasando la información de los atributosn directamente cuando se crea el objeto
+ 
+  
+ ```ruby
+ 
+  class Book
+    attr_accessor :title, :author,:pages
+    def initialize(title,author,pages)
+        @title = title
+        @author = author
+        @pages = pages
+    end
+end
+
+
+book1=Book.new("Harry Potter","JK Rowling",400)
+
+book2=Book.new("Lord of the rings","tolkein",500)
+
+
+```
+ 
+ ## Métodos de objetos
+ 
+ A continuación crearemos la clase Students
+ 
+ ```ruby
+ class Student
+    attr_accessor :name,:major,:gpa
+    def initialize(name,major,gpa)
+        @name = name
+        @major = major
+        @gpa = gpa
+    end
+end
+
+student1=Student.new("Jin","Business",2.6)
+student2=Student.new("Pam","Art",3.6)
+ 
+ ``
+ 
+ De esta clase queremos sabr que estudiantes han tenido honores (cuando gpa >3.5), para esto,
+ utilizamos los métodos de los objetos como a continuación
+ 
+ ```ruby
+  class Student
+    attr_accessor :name,:major,:gpa
+    def initialize(name,major,gpa)
+        @name = name
+        @major = major
+        @gpa = gpa
+    end
+    
+    def has_honors
+       if  gpa > 3.5
+            return true
+       end
+       return false 
+    end
+    
+end
+
+student1=Student.new("Jin","Business",2.6)
+student2=Student.new("Pam","Art",3.6)
+
+ puts student1.has_honors #false
+ puts student2.has_honors #true
+ 
+ ```
+ 
+ 
