@@ -352,9 +352,38 @@ Supongamos que se tiene un arhivo.txt guardado en su computadora
 
 
 ```txt
+#employees.txt
+
 Jim, Sales
 Andy, Sales
 Kelly, Customer Service
 Creed, Quality Assurance
 Michael, Manager
 ```
+
+Para abrir un archivo en Ruby, se hace de la siguiente manera
+
+
+```ruby
+File.open("employees.txt","r") do |file| # la "r" significa que le estamos indicando a Ruby que vamos a leer el archivo
+    puts file.read()
+    
+end
+
+=begin
+Jim, Sales
+Andy, Sales
+Kelly, Customer Service
+Creed, Quality Assurance
+Michael, Manager
+=end
+
+File.open("employees.txt","r") do |file|
+    puts  file.readline() # Jim, Sales
+    puts  file.readline() # Andy, Sales   
+end
+
+```
+Puedes leer los diferentes modos de abrir un archivo 
+
+ Visit: https://stackoverflow.com/questions/3682359/what-are-the-ruby-file-open-modes-and-options
