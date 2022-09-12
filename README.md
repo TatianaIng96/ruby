@@ -505,4 +505,81 @@ student2=Student.new("Pam","Art",3.6)
  
  ```
  
+ ## Herencias
  
+ 
+ La herencias basicamente permite extender la funcionalidad de una clase a otras clases, sería algo así como una super clase
+ 
+ Tenemos la clase chef:
+ 
+ ```ruby
+ class Chef 
+    def make_chicken
+        puts "The chef makes children"
+    end
+    def make_salad
+        puts "The chef makes salad"
+    end
+    def make_special_dish
+        puts "The chef makes bbq ribs"
+    end
+end
+
+chef= Chef.new()
+chef.make_chicken #The chef makes children
+
+ ```
+ Ahora sabemos que un chef italiano puede hacer todo lo que hay en la clase chef, además de su propia espacialidad
+Entonces es cuando sucede la herencia, podemos heredar todo lo de la clase Chef al chef italiano como a continuación
+
+
+```ruby 
+class Chef 
+    def make_chicken
+        puts "The chef makes children"
+    end
+    def make_salad
+        puts "The chef makes salad"
+    end
+    def make_special_dish
+        puts "The chef makes bbq ribs"
+    end
+end
+
+class ItalianChef < Chef
+  def make_special_dish
+        puts "The chef makes pizza"
+    end
+end
+
+
+
+chef= Chef.new()
+chef.make_special_dish  #The chef makes bbq ribs
+
+italian_chef=ItalianChef.new()
+italian_chef.make_salad #The chef makes salad
+italian_chef.make_special_dis # The chef makes pizza
+
+
+```
+
+
+## Modulos
+
+Los modulos son un contenedor donde se pueden almacenar grupos de métodos
+
+```ruby
+module Tools
+# Medodo_1
+# Metodo_2 
+#.....
+
+# Y se llaman:
+
+include Tools
+
+Tools.Metodo1()
+Tools.Metodo2()
+     ....
+```
