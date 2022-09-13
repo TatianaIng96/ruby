@@ -60,3 +60,45 @@ while index <= 5
     puts index
     index+=1
 end
+
+#.....................for.................
+friends=["Kevin","Karen","Oscar","Angela","Andy"]
+
+for element in  friends
+    puts element
+end
+
+# Esta funcion hace exactamente la iteración por cada elemento como en el ciclo for anterior
+
+friends.each do |friend|
+    puts friend
+end
+
+for index in 0..5
+    puts index
+end
+
+6.times do |index|
+    puts index
+end
+
+
+def  pow(base_num,pow_num)
+    result = 1
+    pow_num.times do  #|index|
+        result = result *base_num
+    end
+
+    return result
+end
+
+puts pow(2,3)
+
+=begin
+0
+1
+2
+3
+4
+5
+=end
